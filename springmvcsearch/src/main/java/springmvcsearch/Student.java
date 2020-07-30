@@ -8,7 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Student {
 
 	private String name;
-	private String id;
+	private Long id;
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date date;
 	private List<String> courses;
@@ -22,7 +22,7 @@ public class Student {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(String name, String id, Date date, List<String> courses, String gender, String type) {
+	public Student(String name, Long id, Date date, List<String> courses, String gender, String type) {
 		super();
 		this.name = name;
 		this.id = id;
@@ -40,11 +40,11 @@ public class Student {
 		this.name = name;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

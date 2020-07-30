@@ -1,4 +1,5 @@
 <!doctype html>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html lang="en">
 <head>
 <!-- Required meta tags -->
@@ -22,7 +23,14 @@
 			<div class="card-body">
 				<h3 class="text-center  " style="text-transform: uppercase;">form</h3>
 				<form class="mt-3" action="handleform" method="post">
-
+					<div class="alert alert-danger" role="alert">
+					
+					
+					<form:errors path="student.*"></form:errors>
+					
+					
+					
+					</div>
 
 					<div class="form-group">
 						<label for="formGroupExampleInput">Name</label> <input type="text"
@@ -32,16 +40,16 @@
 
 
 					<div class="form-group">
-						<label for="formGroupExampleInput">ID</label> <input type="text" name="id"
-							class="form-control" id="formGroupExampleInput"
+						<label for="formGroupExampleInput">ID</label> <input type="text"
+							name="id" class="form-control" id="formGroupExampleInput"
 							placeholder="Enter your ID">
 					</div>
 
 
 					<div class="form-group">
 						<label for="formGroupExampleInput">your DOB</label> <input
-							type="text" class="form-control" id="formGroupExampleInput" name="date"
-							placeholder="dd/mm/yy">
+							type="text" class="form-control" id="formGroupExampleInput"
+							name="date" placeholder="dd/mm/yy">
 					</div>
 					<div class="form-group">
 						<select class="custom-select" multiple name="courses">
@@ -81,19 +89,21 @@
 						</select>
 					</div>
 					<div class="card">
-					<div class="card-body">
-					<p>your address</p>
-					<div class="form-group">
-					<input type="text" name="address.street" class="form-control" placeholder="Enter street">
-					
-					</div>
-					<div class="form-group">
-					<input type="text" name="address.city" class="form-control" placeholder="Enter city">
-					
-					</div>
-					
-					</div>
-					
+						<div class="card-body">
+							<p>your address</p>
+							<div class="form-group">
+								<input type="text" name="address.street" class="form-control"
+									placeholder="Enter street">
+
+							</div>
+							<div class="form-group">
+								<input type="text" name="address.city" class="form-control"
+									placeholder="Enter city">
+
+							</div>
+
+						</div>
+
 					</div>
 
 					<div class="container text-center">
