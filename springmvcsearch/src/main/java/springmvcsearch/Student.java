@@ -15,6 +15,8 @@ public class Student {
 	private String gender;
 	private String type;
 
+	private Address address;
+
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -78,10 +80,18 @@ public class Student {
 		this.type = type;
 	}
 
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [name=" + name + ", id=" + id + ", date=" + date + ", courses=" + courses + ", gender=" + gender
-				+ ", type=" + type + "]";
+				+ ", type=" + type + ", address=" + address + "]";
 	}
 
 }

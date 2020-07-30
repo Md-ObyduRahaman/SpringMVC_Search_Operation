@@ -80,6 +80,21 @@
 							<option>Normal Student</option>
 						</select>
 					</div>
+					<div class="card">
+					<div class="card-body">
+					<p>your address</p>
+					<div class="form-group">
+					<input type="text" name="address.street" class="form-control" placeholder="Enter street">
+					
+					</div>
+					<div class="form-group">
+					<input type="text" name="address.city" class="form-control" placeholder="Enter city">
+					
+					</div>
+					
+					</div>
+					
+					</div>
 
 					<div class="container text-center">
 						<button type="submit" class="btn btn-primary">Submit</button>
