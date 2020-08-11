@@ -1,4 +1,3 @@
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,14 +11,14 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
-	<link href='<c:url value="/resources/css/style.css" />'>
-	<script src=  '<c:url value="/resources/js/script.js" />'></script>
 
 <title>Hello, world!</title>
 </head>
 <body>
-<img alt="My image" src=  '<c:url value="/resources/image/sojib.jpg" />'>
+
 	<div class="container">
+	
+	<h1 class="text-center m-4">This is my home page</h1>
 
 		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%;">
 			<div class="card-body">
@@ -28,18 +27,18 @@
 			<div class="form-group">
 			<input type="text" 
 			name="querybox" 
-			placeholder="Enter your keyword"  
+			placeholder="Enter your keyword" 
 			class="form-control">
-			
+
 			</div>
 			<div class="container text-center">
 			<button class="btn btn-outline-light">Search</button>
-			
-			
+
+
 			</div>
-			
+
 			</form>
-			
+
 			</div>
 
 		</div>
@@ -65,4 +64,4 @@
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
