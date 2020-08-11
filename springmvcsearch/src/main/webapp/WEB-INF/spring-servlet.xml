@@ -18,13 +18,17 @@
 		base-package="springmvcsearch" />
 		<mvc:annotation-driven></mvc:annotation-driven>
 		<mvc:resources location="/WEB-INF/resources/" mapping="/resources/**"></mvc:resources>
-
+<!-- configure multipart resolver -->
+<bean name="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<property name="maxUploadSize" value="2097152 "/>
+</bean>
 
 <bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
+
 
 
         </beans>

@@ -1,4 +1,3 @@
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,41 +11,23 @@
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
-	<link href='<c:url value="/resources/css/style.css" />'>
-	<script src=  '<c:url value="/resources/js/script.js" />'></script>
 
-<title>Hello, world!</title>
+<title>Upload image</title>
 </head>
 <body>
-<img alt="My image" src=  '<c:url value="/resources/image/sojib.jpg" />'>
-	<div class="container">
 
-		<div class="card mx-auto mt-5 bg-secondary" style="width: 50%;">
-			<div class="card-body">
-			<h3 class="text-center text-white " style="text-transform: uppercase;">MY Search box</h3>
-			<form class="mt-3"  action="search">
+	<div class="container p-5">
+		<h1>Upload your image</h1>
+
+		<form action="uploadimage" method="post" enctype="multipart/form-data">
 			<div class="form-group">
-			<input type="text" 
-			name="querybox" 
-			placeholder="Enter your keyword"  
-			class="form-control">
-			
+				<label for="exampleFormControlFile1">Slect your image</label> <input
+					type="file" name="profile" class="form-control-file" id="exampleFormControlFile1">
 			</div>
-			<div class="container text-center">
-			<button class="btn btn-outline-light">Search</button>
-			
-			
-			</div>
-			
-			</form>
-			
-			</div>
-
-		</div>
+			<button class="btn btn-outline-success">Upload</button>
+		</form>
 
 	</div>
-
-
 
 
 
